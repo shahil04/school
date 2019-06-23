@@ -1,8 +1,29 @@
 {%extends 'base.html'%}	 
 {%load static%}
-{%block content%}	 
+{%block content%}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
+	<div class="container d-flex align-items-center">
+		<a class="navbar-brand" href="{%url 'home'%}">Kiddos</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="oi oi-menu"></span> Menu
+	  </button>
+	  <!-- <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p> -->
+	  <div class="collapse navbar-collapse" id="ftco-nav">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a href="{%url 'home'%}" class="nav-link pl-0">Home</a></li>
+			<li class="nav-item"><a href="{%url 'about'%}" class="nav-link">About</a></li>
+			<li class="nav-item"><a href="{%url 'teacher'%}" class="nav-link">Teacher</a></li>
+			<li class="nav-item"><a href="{%url 'courses'%}" class="nav-link">Courses</a></li>
+			<li class="nav-item active"><a href="{%url 'pricing'%}" class="nav-link">Pricing</a></li>
+			<li class="nav-item"><a href="{%url 'blog'%}" class="nav-link">Blog</a></li>
+		  <li class="nav-item"><a href="{%url 'contact'%}" class="nav-link">Contact</a></li>
+		</ul>
+	  </div>
+	</div>
+</nav>
 	    
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/bg_2.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -23,7 +44,7 @@
 	        			<h3 class="mb-3">Basic</h3>
 	        			<p><span class="price">$24.50</span> <span class="per">/ 5mos</span></p>
 	        		</div>
-	        		<div class="img" style="background-image: url(images/bg_1.jpg);"></div>
+	        		<div class="img" style="background-image: url(/static/images/bg_1.jpg);"></div>
 	        		<div class="px-4">
 	        			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
         			</div>
@@ -36,7 +57,7 @@
 	        			<h3 class="mb-3">Standard</h3>
 	        			<p><span class="price">$34.50</span> <span class="per">/ 5mos</span></p>
 	        		</div>
-	        		<div class="img" style="background-image: url(images/bg_2.jpg);"></div>
+	        		<div class="img" style="background-image: url(/static/images/bg_2.jpg);"></div>
         			<div class="px-4">
 	        			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
         			</div>
@@ -49,7 +70,7 @@
 	        			<h3 class="mb-3">Premium</h3>
 	        			<p><span class="price">$54.50</span> <span class="per">/ 5mos</span></p>
 	        		</div>
-	        		<div class="img" style="background-image: url(images/bg_3.jpg);"></div>
+	        		<div class="img" style="background-image: url(/static/images/bg_3.jpg);"></div>
         			<div class="px-4">
 	        			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
         			</div>
@@ -62,7 +83,7 @@
 	        			<h3 class="mb-3">Platinum</h3>
 	        			<p><span class="price">$89.50</span> <span class="per">/ 5mos</span></p>
 	        		</div>
-	        		<div class="img" style="background-image: url(images/bg_5.jpg);"></div>
+	        		<div class="img" style="background-image: url(/static/images/bg_5.jpg);"></div>
         			<div class="px-4">
 	        			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
         			</div>
